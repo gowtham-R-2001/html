@@ -1,0 +1,218 @@
+<html>
+	<head>
+		<title>Quiz game</title>
+		<script language="JavaScript">
+			var ans = 0 , sflg = 0 , flg = 0 , score = 0;
+			var q = Array(10) ;
+			var o1 = Array(10) ;
+			var o2 = Array(10) ;
+			var o3 = Array(10) ;
+			var answer=[3,2,1,1,3,3,2,3,1,1] ;
+			q[0] = "&nbsp;&nbsp;&nbsp;Who is the father of C language ?&nbsp;&nbsp;&nbsp;" ;
+			o1[0] = "Bjarne Stroustrup" ;
+			o2[0] = "James A. Gosling" ;
+			o3[0] = "Dennis Ritche" ;/*	*/
+
+			q[1] = "&nbsp;&nbsp;&nbsp;For 16-bit compiler allowable range for integer constant is ?&nbsp;&nbsp;&nbsp;" ;
+			o1[1] = "-3.4e38 to 3.4e38" ;
+			o2[1] = "-32768 to 32767" ;/*	*/
+			o3[1] = "-32767 to 32768" ;
+
+			q[2] = "&nbsp;&nbsp;&nbsp;C programs are converted into machine language with the help of ?&nbsp;&nbsp;&nbsp;" ;
+			o1[2] = "A compiler" ;/*	*/
+			o2[2] = "An editor" ;
+			o3[2] = "An operating system" ;
+
+			q[3] = "&nbsp;&nbsp;&nbsp;C was primarily developed as ?&nbsp;&nbsp;&nbsp;" ;
+			o1[3] = "System programming language" ;/*	*/
+			o2[3] = "General purpose language" ;
+			o3[3] = "Data processing language" ;
+
+			q[4] = "&nbsp;&nbsp;&nbsp;Which one of the following is reserved keyword for C ?&nbsp;&nbsp;&nbsp;" ;
+			o1[4] = "auto" ;
+			o2[4] = "case" ;
+			o3[4] = "main" ;/*	*/
+
+			q[5] = "&nbsp;&nbsp;&nbsp;A C program variable cannot start with ?&nbsp;&nbsp;&nbsp;" ;
+			o1[5] = "numbers" ;
+			o2[5] = "special character other than underscore" ;
+			o3[5] = "both of the above" ;/* */
+
+			q[6] = "&nbsp;&nbsp;&nbsp;Which of the following is not a valid identifer ?&nbsp;&nbsp;&nbsp;" ;
+			o1[6] = "_sivasakthi" ;
+			o2[6] = "1sivasakthi" ;/* */
+			o3[6] = "siva_sakthi" ;
+
+			q[7] = "&nbsp;&nbsp;&nbsp;What is the correct value to return to the operating system <br/>after a successful compilation of a program ?&nbsp;&nbsp;&nbsp;" ;
+			o1[7] = "1" ;
+			o2[7] = "-1" ;
+			o3[7] = "0" ;/* */
+
+			q[8] = "&nbsp;&nbsp;&nbsp;Which of the following is not a correct type variable ?&nbsp;&nbsp;&nbsp;" ;
+			o1[8] = "real" ;/**/
+			o2[8] = "float" ;
+			o3[8] = "int" ;
+
+			q[9] = "&nbsp;&nbsp;&nbsp;C langauge developed at ?&nbsp;&nbsp;&nbsp;" ;
+			o1[9] = "AT & T's Bell Laboratories of USA in 1972" ;/**/
+			o2[9] = "Sun Microsystems in 1973" ;
+			o3[9] = "Cambridge University in 1972" ;
+
+			function fun(x)
+			{
+				var val = document.f.butn.value ;
+				switch(val)
+				{
+					case "begin" :
+								ques.innerHTML = q[ans] ;
+								c1.innerHTML = o1[ans] ;
+								c2.innerHTML = o2[ans] ;
+								c3.innerHTML = o3[ans] ;
+								ans++ ;
+								document.f.butn.value = "submit" ;
+								break ;
+
+					case "submit" :
+								if( (document.f.opt.value == "a") && (answer[ans-1] == 1) )
+								{
+									check1.innerHTML="<img src='imgs/button.gif'>" ;
+									score++ ;
+									flg = 0 ;
+								}
+								else if( (document.f.opt.value == "a") && (answer[ans-1] != 1) )
+								{
+									check1.innerHTML="<img src='imgs/button_2_3.gif'>" ;
+									if( answer[ans-1] == 2 )
+										check2.innerHTML = "<img src='imgs/button.gif'>"  ;
+									if( answer[ans-1] == 3 )
+										check3.innerHTML = "<img src='imgs/button.gif'>"  ;
+									flg = 0;
+								}
+								else if( (document.f.opt.value == "b") && (answer[ans-1] == 2) )
+								{
+									check2.innerHTML="<img src='imgs/button.gif'>" ;
+									score++ ;
+									flg = 0 ;
+								}
+								else if( (document.f.opt.value == "b") && (answer[ans-1] != 2) )
+								{
+									check2.innerHTML="<img src='imgs/button_2_3.gif'>" ;
+									if( answer[ans-1] == 1 )
+										check1.innerHTML = "<img src='imgs/button.gif'>"  ;
+									if( answer[ans-1] == 3 )
+										check3.innerHTML = "<img src='imgs/button.gif'>"  ;
+									flg = 0 ;
+								}
+								else if( (document.f.opt.value == "c") && (answer[ans-1] == 3) )
+								{
+									check3.innerHTML="<img src='imgs/button.gif'>" ;
+									score++ ;
+									flg = 0 ;
+								}
+								else if( (document.f.opt.value == "c") && (answer[ans-1] != 3) )
+								{
+									check3.innerHTML="<img src='imgs/button_2_3.gif'>" ;
+									if( answer[ans-1] == 1 )
+										check1.innerHTML = "<img src='imgs/button.gif'>"  ;
+									if( answer[ans-1] == 2 )
+										check2.innerHTML = "<img src='imgs/button.gif'>"  ;
+									flg = 0 ;
+								}
+								else
+									flg = 1 ;
+									
+								scr.innerHTML = "&nbsp;&nbsp;&nbsp;Score : "+ score +"&nbsp;&nbsp;&nbsp;" ;
+								if(flg != 1)
+									document.f.butn.value = "next" ;
+									
+								if(ans > 9)
+									document.f.butn.value = "Test Over !";
+
+								break;
+
+					case "next" :
+								if( flg == 0 )
+								{
+									document.f.opt[0].checked = false ;
+									document.f.opt[1].checked = false ;
+									document.f.opt[2].checked = false ;
+									ques.innerHTML = q[ans] ;
+									c1.innerHTML = o1[ans] ;
+									c2.innerHTML = o2[ans] ;
+									c3.innerHTML = o3[ans] ;
+									ans++ ;
+									document.f.butn.value = "submit" ;
+									check1.innerHTML = "<img src=''>" ;
+									check2.innerHTML = "<img src=''>"  ;
+									check3.innerHTML = "<img src=''>"  ;
+								}
+								break ;
+
+					default :
+							break ;
+				}
+			}
+		</script>
+
+		<style>
+			body{
+				background:#ffffff;
+			}
+
+			input[type=button] {
+				height:30px;
+				width:100px;
+				font-size:15pt;
+				font-family:arial;
+				border:2px solid #000000;
+			}
+
+			span {
+				font-family:arial;
+				margin-left:20px;
+				font-size:15pt;
+			}
+
+			input[type=button]{
+				margin-left:40%;
+				margin-top:5%;
+				position:fixed;
+				border:2px solid #000000;
+			}
+
+			input[type=button]:hover{
+				border:3px solid #000000;
+			}
+		</style>
+	</head>
+
+
+	<body>
+		<span name="scr" id="scr" style="background:#A52A2A;color:#ffffff;border-radius:10px;padding:2px;">&nbsp;&nbsp;&nbsp;Score : 0&nbsp;&nbsp;&nbsp;</span>
+		<form name="f">
+			<table align="center" cellpadding="20" border="0">
+				<tr>
+					<td align="center"> <h1 name="ques" id="ques" style="background:#A52A2A;color:#ffffff">&nbsp;&nbsp;&nbsp;C Program Quiz&nbsp;&nbsp;&nbsp;</h1> </td>
+				</tr>
+
+					<tr>
+						<td><input type="radio" name="opt" value="a"/><b><span name="c1" id="c1"></span>&nbsp;&nbsp;<span name="check1" id="check1"></span> </b></td>
+					</tr>
+
+					<tr>
+						<td><input type="radio" name="opt" value="b" /><b><span name="c2" id="c2"></span>&nbsp;&nbsp;<span name="check2" id="check2"></span> </b></td>
+					</tr>
+
+					<tr>
+						<td><input type="radio" name="opt" value="c" /><b><span name="c3" id="c3"></span>&nbsp;&nbsp;<span name="check3" id="check3"></span> </b></td>
+					</tr>
+
+					<tr>
+						<td></td>
+					</tr>
+			</table>
+				<input type="button" name="butn" value="begin" onclick="fun()"></input>
+		</form>
+
+	</body>
+</html>

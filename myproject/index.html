@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>codeG</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <noscript>
+        This website won't work properly without JavaScript. Please turn on JavaScript in settings.
+    </noscript>
+    <div class="nav">
+        <h2 id="pb">Personal Blog <i class="fa fa-registered"></i></h2>
+        <input type="checkbox" name="chk" id="chk" />
+        <label for="chk" style="color:white" id="navicon"> <i class="fa fa-navicon" id="navicon1"></i> </label>
+        <div class="wipe"></div>
+        <ul>
+            <li> <a href="#bthome">Home <i class="fa fa-home"></i></a> </li>
+            <li> <a href="#btprojects">Projects <i class="fa fa-cog"></i></a> </li>
+            <li> <a href="#btabout">About <i class="fa fa-user"></i></a> </li>
+            <li> <a href="#btcontact">Contact <i class="fa fa-phone"></i></a> </li>
+            <li> <a href="#nothing" id="toggle-link">mode <i class="fa fa-toggle-off" id="toggle"></i></a> </li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="container light-mode" id="mode">
+        <div class="bgimage">
+            <div class="outer">
+                <div class="name-container">
+                    <h3 id="hello">Hello,</h3><br />
+                    <h3 id="iam">I am</h3><br />
+                    <h3 id="myname">Gowtham</h3><br />
+                </div>
+                <div class="butn-container"></div>
+            </div>
+        </div>
+
+        <div class="subHeading1">
+            HOME
+        </div>
+        <fieldset class="home" data-aos="fade-right">
+            <a name="bthome"></a>
+            Hey there , thanks for visiting.Here you gonna see the mini-projects that I had done.
+            "The most technologically efficient machine that man has ever invented is the book".
+        </fieldset>
+
+        <div class="subHeading2">
+            MINI - PROJECTS
+        </div>
+
+        <fieldset class="projects">
+            <a name="btprojects"></a>
+            <fieldset class="c">
+                <legend>C/C++</legend>
+                <input type="checkbox" name="bankbox" id="bankbox" />
+                <label for="bankbox">&nbsp;&nbsp;&nbsp;&nbsp; Bank application <i class="fa fa-caret-up"
+                    id="bankicon"></i> </label>
+                <div class="bankslide">
+                    <br />
+                    <img src="imgs/c1.jpg" id="bankimage" />
+
+                    <input type="radio" name="bank" id="bank1" checked />
+                    <input type="radio" name="bank" id="bank2" />
+                    <input type="radio" name="bank" id="bank3" />
+                    <input type="radio" name="bank" id="bank4" />
+                    <input type="radio" name="bank" id="bank5" />
+                    <input type="radio" name="bank" id="bank6" />
+                    <input type="radio" name="bank" id="bank7" />
+                    <input type="radio" name="bank" id="bank8" />
+                    <br />
+                    <div class="navigateBar">
+                        <label for="bank1" class="labelClass" style="background-color: black;"></label>
+                        <label for="bank2" class="labelClass"></label>
+                        <label for="bank3" class="labelClass"></label>
+                        <label for="bank4" class="labelClass"></label>
+                        <label for="bank5" class="labelClass"></label>
+                        <label for="bank6" class="labelClass"></label>
+                        <label for="bank7" class="labelClass"></label>
+                        <label for="bank8" class="labelClass"></label>
+                    </div>
+                    <br />
+                    <br />
+                    <div class="bankDesc">
+                        <ol style="list-style-type: none;" id="bankOverview">
+                            <li> <u>Overview</u> </li>
+                            <li>Language : C </li>
+                            <li>Tools : Codeblocks</li>
+                            <li>Compiler : Gnu Gcc</li>
+                            <li>Concepts : Structure , File handling etc.</li>
+                        </ol>
+                        <br />
+                        <u> Description</u> <br />
+                        &nbsp;&nbsp;&nbsp;This bank application was made using C programming. The data structures used
+                        in this is Array and Structure.This application deals with
+                        <ol>
+                            <li> Creating bank account </li>
+                            <li> Amount withdraw </li>
+                            <li> View all account details </li>
+                            <li> View Account of individual person </li>
+                            <li> Transaction process </li>
+                            <li> Editing the exisiting account </li>
+                        </ol>
+                        <br />
+                        The account details are stored in text file as unformatted text format. so,we cannot read
+                        the details from the file directly. we can read the contents files only by using the bank
+                        application.
+                        <br />
+                        <br />
+                        <hr />
+                    </div>
+                </div>
+                <br />
+                <br />
+
+                <input type="checkbox" name="cquizbox" id="cquizbox" />
+                <label for="cquizbox">&nbsp;&nbsp;&nbsp;&nbsp; Simple Quiz game <i class="fa fa-caret-up"
+                        id="cquizicon"></i> </label>
+                <div class="cquizslide">
+                    <br />
+                    <img src="imgs/q1.jpg" id="cquizimage" />
+
+                    <input type="radio" name="cquiz" id="cquiz1" checked />
+                    <input type="radio" name="cquiz" id="cquiz2" />
+                    <input type="radio" name="cquiz" id="cquiz3" />
+                    <input type="radio" name="cquiz" id="cquiz4" />
+                    <input type="radio" name="cquiz" id="cquiz5" />
+
+                    <br />
+                    <div class="navigateBar">
+                        <label for="cquiz1" class="labelClass" style="background-color: black;"></label>
+                        <label for="cquiz2" class="labelClass"></label>
+                        <label for="cquiz3" class="labelClass"></label>
+                        <label for="cquiz4" class="labelClass"></label>
+                        <label for="cquiz5" class="labelClass"></label>
+                    </div>
+                    <br />
+                    <br />
+                    <div class="quizDesc">
+                        <ol style="list-style-type: none;" id="quizOverview">
+                            <li> <u>Overview</u> </li>
+                            <li>Language : C programming</li>
+                            <li>Tools : Codeblocks</li>
+                            <li>Compiler : Gnu Gcc</li>
+                            <li>Concepts : Array etc.</li>
+                        </ol>
+                        <br />
+                        <u> Description</u> <br />
+                        &nbsp;&nbsp;&nbsp;This simple quiz game application was made using C++ programming. The data
+                        structures used in this is Array. The game will ask new set questions every time you run the
+                        program.
+                        This application deals with
+                        <ol>
+                            <li> Array traversal and manipulation </li>
+                            <li> Random numbers generating </li>
+                            <li> Storing the players statistics in text file </li>
+                            <li> file handling </li>
+                        </ol>
+                        <br />
+                        <hr />
+                    </div>
+                </div>
+                <br />
+                <br />
+
+                <input type="checkbox" name="ticketbox" id="ticketbox" />
+                <label for="ticketbox">&nbsp;&nbsp;&nbsp;&nbsp; Ticket booking system <i class="fa fa-caret-up"
+                        id="ticketicon"></i> </label>
+                <div class="cticketslide">
+                    <br />
+                    <img src="imgs/t1.jpg" id="cticketimage" />
+
+                    <input type="radio" name="cticket" id="cticket1" checked />
+                    <input type="radio" name="cticket" id="cticket2" />
+                    <input type="radio" name="cticket" id="cticket3" />
+                    <input type="radio" name="cticket" id="cticket4" />
+                    <input type="radio" name="cticket" id="cticket5" />
+                    <input type="radio" name="cticket" id="cticket6" />
+                    <input type="radio" name="cticket" id="cticket7" />
+                    <input type="radio" name="cticket" id="cticket8" />
+
+                    <br />
+                    <div class="navigateBar">
+                        <label for="cticket1" class="labelClass" style="background-color: black;"></label>
+                        <label for="cticket2" class="labelClass"></label>
+                        <label for="cticket3" class="labelClass"></label>
+                        <label for="cticket4" class="labelClass"></label>
+                        <label for="cticket5" class="labelClass"></label>
+                        <label for="cticket6" class="labelClass"></label>
+                        <label for="cticket7" class="labelClass"></label>
+                        <label for="cticket8" class="labelClass"></label>
+                    </div>
+                    <br />
+                    <br />
+
+                    <div class="ticketDesc">
+                        <ol style="list-style-type: none;" id="ticketOverview">
+                            <li> <u>Overview</u> </li>
+                            <li>Language : C++ </li>
+                            <li>Tools : Codeblocks</li>
+                            <li>Compiler : Gnu Gcc</li>
+                            <li>Concepts : Array , UI , console position , header file etc.</li>
+                        </ol>
+                        <br />
+                        <u> Description</u> <br />
+                        &nbsp;&nbsp;&nbsp;
+                        This application deals with
+                        <ol>
+                            <li> It allows booking for Coimbatore to Chennai and vice versa. </li>
+                            <li> Array mainpulation plays a vital role. </li>
+                            <li> It includes two sections first class and business class. </li>
+                            <li> Stores the daily ticket booking in files using structure. </li>
+                        </ol>
+                        <br />
+                        <hr />
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="java">
+                <legend>Java</legend>
+                <input type="checkbox" name="shopbox" id="shopbox" />
+                <label for="shopbox">&nbsp;&nbsp;&nbsp;&nbsp; Shop database GUI <i class="fa fa-caret-up"
+                        id="shopicon"></i> </label>
+                <br />
+                <div class="jshopslide">
+                    <br />
+                    <img src="imgs/shop1.jpg" id="jshopimage" />
+
+                    <input type="radio" name="jshop" id="jshop1" checked />
+                    <input type="radio" name="jshop" id="jshop2" />
+                    <input type="radio" name="jshop" id="jshop3" />
+                    <input type="radio" name="jshop" id="jshop4" />
+                    <input type="radio" name="jshop" id="jshop5" />
+                    <input type="radio" name="jshop" id="jshop6" />
+                    <input type="radio" name="jshop" id="jshop7" />
+                    <input type="radio" name="jshop" id="jshop8" />
+
+                    <br />
+                    <div class="navigateBar">
+                        <label for="jshop1" class="labelClass" style="background-color: black;"></label>
+                        <label for="jshop2" class="labelClass"></label>
+                        <label for="jshop3" class="labelClass"></label>
+                        <label for="jshop4" class="labelClass"></label>
+                        <label for="jshop5" class="labelClass"></label>
+                        <label for="jshop6" class="labelClass"></label>
+                        <label for="jshop7" class="labelClass"></label>
+                        <label for="jshop8" class="labelClass"></label>
+                    </div>
+                    <br />
+                    <br />
+
+                    <div class="shopDesc">
+                        <ol style="list-style-type: none;" id="shopOverview">
+                            <li> <u>Overview</u> </li>
+                            <li>Language : Java </li>
+                            <li>Tools : Notepad++</li>
+                            <li>Compiler : JVM JRE</li>
+                            <li>Concepts : Array, GUI, SQLITE, regex, JDBC etc.</li>
+                        </ol>
+                        <br />
+                        <u> Description</u> <br />
+                        This is a shopping market database GUI desktop application.
+                        The language used is Java 10. It includes four sections.
+                        <ol>
+                            <li> Stock entry </li>
+                            <li> Billing </li>
+                            <li> Stock adder </li>
+                            <li> Display panel </li>
+                        </ol>
+                        <br />
+                        <dl>
+                            <dt> <u>Stock entry </u> </dt>
+                            <dd>
+                                &nbsp;&nbsp;&nbsp;In this panel, the owner of the shop update the stock amount and
+                                information whether he needs.
+                                It includes 4 text fields with best, simple and friendly user interface.
+                                The stock details are stored in the seperate table in the database.
+                            </dd>
+                            <br />
+
+                            <dt> <u>Bill panel</u> </dt>
+                            <dd>
+                                &nbsp;&nbsp;&nbsp;In this panel, we want to fill the tet fields with customer name, date
+                                and total number of products.
+                                The program will automatically generates a bill number from the database from where we
+                                left before. It includes a drop down list box for choosing
+                                the required product. Add button adds the product to the bill text area and adds the
+                                data to the bill table in the
+                                database. The total cost for the bill appears in the total cost text field. The next
+                                bill button revert the changes and move on to the next bill.
+                            </dd>
+                            <br />
+
+                            <dt> <u>Stock adder</u> </dt>
+                            <dd>
+                                &nbsp;&nbsp;&nbsp; In this panel, we need to add the exisiting stocks with the new
+                                stocks.
+                                Enter the product number in the text field and press enter. The information about the
+                                product will appears.
+                                Then, it helps you to add the products in the database. It is very much user friendly.
+                            </dd>
+                            <br />
+
+                            <dt> <u>Display panel</u> </dt>
+                            <dd>
+                                &nbsp;&nbsp;&nbsp; In this panel, it asks you to enter the date.
+                                The total number of sale on that particular date will appears on the
+                                text area. If the data is empty on the particular date it displays alert message as 'no
+                                data'.
+                            </dd>
+                            <br />
+                        </dl>
+
+                        <hr />
+                    </div>
+                </div>
+                <br />
+
+                <input type="checkbox" name="jquizbox" id="jquizbox" />
+                <label for="jquizbox">&nbsp;&nbsp;&nbsp;&nbsp; Simple Singular/Plural GUI <i class="fa fa-caret-up"
+                        id="jquizicon"></i> </label>
+                <br />
+                <div class="jquizslide">
+                    <br />
+                    <img src="imgs/sp1.jpg" id="jquizimage" />
+
+                    <input type="radio" name="jquiz" id="jquiz1" checked />
+                    <input type="radio" name="jquiz" id="jquiz2" />
+                    <input type="radio" name="jquiz" id="jquiz3" />
+                    <input type="radio" name="jquiz" id="jquiz4" />
+                    <input type="radio" name="jquiz" id="jquiz5" />
+                    <input type="radio" name="jquiz" id="jquiz6" />
+
+                    <br />
+                    <div class="navigateBar">
+                        <label for="jquiz1" class="labelClass" style="background-color: black;"></label>
+                        <label for="jquiz2" class="labelClass"></label>
+                        <label for="jquiz3" class="labelClass"></label>
+                        <label for="jquiz4" class="labelClass"></label>
+                        <label for="jquiz5" class="labelClass"></label>
+                        <label for="jquiz6" class="labelClass"></label>
+                    </div>
+                    <br />
+                    <br />
+
+                    <div class="jquizDesc">
+                        <ol style="list-style-type: none;" id="jquizOverview">
+                            <li> <u>Overview</u> </li>
+                            <li>Language : Java </li>
+                            <li>Tools : Notepad++</li>
+                            <li>Compiler : JVM JRE</li>
+                            <li>Concepts : Array, Random numbers, GUI etc.</li>
+                        </ol>
+                        <br />
+                        <u>Description</u> <br />
+                        &nbsp;&nbsp;&nbsp; This is a simple GUI singular/plural game for kinder garden kids.
+                        The game asks new set of ten questions every time we run the program. It is very user-friendly
+                        and a
+                        good knowledge gainer for kids and for some adults too. lol.
+                        <br />
+                        <br />
+                        <hr />
+                    </div>
+                </div>
+                <br />
+
+                <input type="checkbox" name="studentbox" id="studentbox" />
+                <label for="studentbox">&nbsp;&nbsp;&nbsp;&nbsp; Student database GUI <i class="fa fa-caret-up"
+                        id="studenticon"></i> </label>
+                <br />
+                <div class="jstudentslide">
+                    <br />
+                    <img src="imgs/s1.jpg" id="jstudentimage" />
+
+                    <input type="radio" name="jstudent" id="jstudent1" checked />
+                    <input type="radio" name="jstudent" id="jstudent2" />
+                    <input type="radio" name="jstudent" id="jstudent3" />
+                    <input type="radio" name="jstudent" id="jstudent4" />
+                    <input type="radio" name="jstudent" id="jstudent5" />
+                    <input type="radio" name="jstudent" id="jstudent6" />
+                    <input type="radio" name="jstudent" id="jstudent7" />
+
+                    <br />
+                    <div class="navigateBar">
+                        <label for="jstudent1" class="labelClass" style="background-color: black;"></label>
+                        <label for="jstudent2" class="labelClass"></label>
+                        <label for="jstudent3" class="labelClass"></label>
+                        <label for="jstudent4" class="labelClass"></label>
+                        <label for="jstudent5" class="labelClass"></label>
+                        <label for="jstudent6" class="labelClass"></label>
+                        <label for="jstudent7" class="labelClass"></label>
+                    </div>
+                    <br />
+                    <br />
+
+                    <div class="jstudentDesc">
+                        <ol style="list-style-type: none;" id="jstudentOverview">
+                            <li> <u>Overview</u> </li>
+                            <li>Language : Java </li>
+                            <li>Tools : Notepad++</li>
+                            <li>Compiler : JVM JRE</li>
+                            <li>Concepts : GUI, SQLITE, JDBC, Arrays, regex etc.</li>
+                        </ol>
+                        <br />
+                        <u>Description</u> <br />
+                        &nbsp;&nbsp;&nbsp; This is a student database system for schools. It is based on the CRUD
+                        operations.
+                        Creation, Retrival, Updation, Deletion.
+                        It includes four section.
+                        <ol>
+                            <li> Input panel </li>
+                            <li> Display panel </li>
+                            <li> Edit panel </li>
+                            <li> Delete panel </li>
+                        </ol>
+                        <br />
+                        <dl>
+                            <dt> <u>Input Panel</u> </dt>
+                            <dd>
+                                &nbsp;&nbsp;&nbsp; In this panel, the roll number will be generated automatically starts
+                                from 101 or shall be modified.
+                                It asks you to enter the student name, five subjects marks of student. Then, the total
+                                marks will be calculated
+                                automatically. The submit button performs a action, stores the details of a student in
+                                the database.
+                                The revert button revrt the changes. This is a creation operation from the CRUD
+                                operations.
+                            </dd>
+
+                            <dt> <u>Display Panel</u> </dt>
+                            <dd>
+                                &nbsp;&nbsp;&nbsp; In this panel, it asks you to enter the roll number of a particular
+                                student.
+                                The showgrade button performs a action, it displays the details, marks and also grade
+                                for that particular student.
+                                The data is retrieved from the database.
+                                This is a retrieval operation from the CRUD operations.
+                            </dd>
+
+                            <dt> <u>Edit panel</u> </dt>
+                            <dd>
+                                &nbsp;&nbsp;&nbsp; It allows you to directly edit the details of a student except the
+                                roll number.
+                                After editing the data of the student, it will automatically gets updated in the
+                                database at the
+                                backend. This is a updation operation from the cRUD operations.
+                            </dd>
+
+                            <dt>
+                            <dd>
+                                &nbsp;&nbsp;&nbsp; It asks you to enter the roll number of a student that you wish to
+                                delete.
+                                After entering the roll number it displays the data of that student. For confirmation,
+                                it asks you to press the press the 'delete' button.
+                                This is a deletion operation fom the CRUD operations.
+                                Therefore, from these four panels it covers the all the 4 CRUD operations.
+                            </dd>
+                            </dt>
+                        </dl>
+                        <br />
+                        <hr />
+                    </div>
+                </div>
+                <br />
+
+                <input type="checkbox" name="hillbox" id="hillbox" />
+                <label for="hillbox"> &nbsp;&nbsp;&nbsp;&nbsp; Hill Cipher encryption <i class="fa fa-caret-up"
+                        id="hillicon"></i> </label>
+
+                <div class="jhillslide">
+                    <br />
+                    <img src="imgs/hill1.jpg" id="jhillimage" />
+
+                    <input type="radio" name="jhill" id="jhill1" checked />
+                    <input type="radio" name="jhill" id="jhill2" />
+                    <input type="radio" name="jhill" id="jhill3" />
+                    <input type="radio" name="jhill" id="jhill4" />
+                    <input type="radio" name="jhill" id="jhill5" />
+                    <input type="radio" name="jhill" id="jhill6" />
+                    <input type="radio" name="jhill" id="jhill7" />
+
+                    <br />
+                    <div class="navigateBar">
+                        <label for="jhill1" class="labelClass" style="background-color: black;"></label>
+                        <label for="jhill2" class="labelClass"></label>
+                        <label for="jhill3" class="labelClass"></label>
+                        <label for="jhill4" class="labelClass"></label>
+                        <label for="jhill5" class="labelClass"></label>
+                        <label for="jhill6" class="labelClass"></label>
+                        <label for="jhill7" class="labelClass"></label>
+                    </div>
+                    <br />
+                    <br />
+
+                    <div class="jhillDesc">
+                        <ol style="list-style-type: none;" id="jhillOverview">
+                            <li> <u>Overview</u> </li>
+                            <li>Language : Java </li>
+                            <li>Tools : Notepad++</li>
+                            <li>Compiler : JVM JRE</li>
+                            <li>Concepts : Array, Random numbers, GUI , matrix etc.</li>
+                        </ol>
+                        <br />
+                        <u>Description</u> <br />
+                        &nbsp;&nbsp;&nbsp; This is a famous hill cipher encryption and decryption algorithm.
+                        It is used to encrypt the message in the unknown random number format. It is encrypted with the
+                        help of encryption
+                        key that has generated by the user. Then, it was decrypted by the receiver with the same key. If
+                        the wrong key is entered
+                        it displays a wrong message as like unformatted text. <br />
+                        &nbsp;&nbsp;&nbsp; A matrix determination, matrix inversion, matrix multiplication are some of
+                        the math
+                        concepts used in this GUI application. The key is 4 digits numbers or more. It is not easy to
+                        decrypt without knowing the
+                        decryption key.
+                        <br />
+                        <br />
+                        <hr />
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="web">
+                <legend style="margin-left: -18px;">Web development</legend>
+                <input type="checkbox" name="web1box" id="web1box" />
+                <label for="web1box"> &nbsp;&nbsp;Front end website <i class="fa fa-caret-up" id="web1icon"></i>
+                </label>
+
+                <div class="web1slide">
+                    <div class="web1Desc">
+                        <br />
+                        <ol style="list-style-type: none;" id="web1Overview">
+                            <li> <u>Overview</u> </li>
+                            <li>Language : HTML CSS JS </li>
+                            <li>Tools : Visual studio code and Notepad++</li>
+                            <li>Testing Browser : Chrome</li>
+                        </ol>
+                        <br />
+                        <u>Description</u> <br />
+                        &nbsp;&nbsp;&nbsp; The website you are seeing now is the first web designing project that I have
+                        done.
+                        I used HTML, CSS, JS languages. Html5 for document creation. CSS for styling and animation.
+                        Javascript for adding
+                        event listeners and scripting the behaviour of the web page and so on.
+                        <br /> &nbsp;&nbsp;&nbsp;Just explore the website and give some constructive criticism in
+                        person. You can find
+                        the contact section below the web page.
+                        <br />
+                    </div>
+                </div>
+
+                <br />
+                <br />
+
+
+                <input type="checkbox" name="web2box" id="web2box" style="display: none;" />
+                <label for="web2box"> &nbsp;&nbsp;Student Management System <i class="fa fa-caret-up" id="web2icon"></i>
+                </label>
+
+                <div class="web2slide">
+                    <br />
+                    <img src="imgs/sms1.jpg" id="smsimage" />
+
+                    <input type="radio" name="sms" id="sms1" checked />
+                    <input type="radio" name="sms" id="sms2" />
+                    <input type="radio" name="sms" id="sms3" />
+                    <input type="radio" name="sms" id="sms4" />
+                    <input type="radio" name="sms" id="sms5" />
+                    <input type="radio" name="sms" id="sms6" />
+                    <input type="radio" name="sms" id="sms7" />
+                    <input type="radio" name="sms" id="sms8" />
+                    <input type="radio" name="sms" id="sms9" />
+                    <input type="radio" name="sms" id="sms10" />
+                    <input type="radio" name="sms" id="sms11" />
+                    <input type="radio" name="sms" id="sms12" />
+                    <input type="radio" name="sms" id="sms13" />
+                    <input type="radio" name="sms" id="sms14" />
+                    <input type="radio" name="sms" id="sms15" />
+                    <input type="radio" name="sms" id="sms16" />
+                    <input type="radio" name="sms" id="sms17" />
+                    <input type="radio" name="sms" id="sms18" />
+                    <input type="radio" name="sms" id="sms19" />
+                    <input type="radio" name="sms" id="sms20" />
+                    <input type="radio" name="sms" id="sms21" />
+                    <input type="radio" name="sms" id="sms22" />
+                    <input type="radio" name="sms" id="sms23" />
+                    <input type="radio" name="sms" id="sms24" />
+
+                    <br />
+                    <div class="navigateBar scrollNav">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                        <label for="sms1" class="labelClass" style="background-color: black;"></label>
+                        <label for="sms2" class="labelClass"></label>
+                        <label for="sms3" class="labelClass"></label>
+                        <label for="sms4" class="labelClass"></label>
+                        <label for="sms5" class="labelClass"></label>
+                        <label for="sms6" class="labelClass"></label>
+                        <label for="sms7" class="labelClass"></label>
+                        <label for="sms8" class="labelClass"></label>
+                        <label for="sms9" class="labelClass"></label>
+                        <label for="sms10" class="labelClass"></label>
+                        <label for="sms11" class="labelClass"></label>
+                        <label for="sms12" class="labelClass"></label>
+                        <label for="sms13" class="labelClass"></label>
+                        <label for="sms14" class="labelClass"></label>
+                        <label for="sms15" class="labelClass"></label>
+                        <label for="sms16" class="labelClass"></label>
+                        <label for="sms17" class="labelClass"></label>
+                        <label for="sms18" class="labelClass"></label>
+                        <label for="sms19" class="labelClass"></label>
+                        <label for="sms20" class="labelClass"></label>
+                        <label for="sms21" class="labelClass"></label>
+                        <label for="sms22" class="labelClass"></label>
+                        <label for="sms23" class="labelClass"></label>
+                        <label for="sms24" class="labelClass"></label>
+                    </div>
+                    <p id="slideLeft">
+                        slide left &lt;&lt;&lt;
+                    </p>
+                    <br />
+                    <br />
+
+                    <div class="web2Desc">
+                        <br />
+                        <ol style="list-style-type: none;" id="web2Overview">
+                            <li> <u>Overview</u> </li>
+                            <li>Language : HTML CSS JS PHP MYSQLI </li>
+                            <li>Tools : Notepad++, XAMPP</li>
+                            <li>Testing Browser : Chrome</li>
+                        </ol>
+                        <br />
+                        <u>Description</u> <br />
+                        &nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugit
+                        veniam, cum animi maxime
+                        aperiam amet libero perferendis hic, assumenda praesentium voluptas aut odio repudiandae eos
+                        dolorem. Fuga, quibusdam blanditiis!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus iste culpa deleniti harum
+                        omnis, error cupiditate, adipisci doloremque,
+                        sequi vel distinctio! Consectetur totam iure magnam iusto omnis voluptas? Accusantium,
+                        voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Totam necessitatibus ipsa dignissimos cupiditate excepturi quod vero omnis? Tenetur ab optio
+                        dolorem cupiditate, saepe dignissimos impedit mollitia consequatur,
+                        ipsam deserunt quam.
+                        <br />
+                        <br />
+                        <hr />
+                    </div>
+                </div>
+
+
+            </fieldset>
+
+            <fieldset class="android">
+                <legend style="margin-left: -18px;">Android</legend>
+                <input type="checkbox" name="android1box" id="android1box" />
+                <label for="android1box"> &nbsp;&nbsp;&nbsp;&nbsp; Chat application <i class="fa fa-caret-up"
+                        id="chaticon"></i> </label>
+
+                <div class="android1slide">
+                    <br />
+                    <img src="https://i.ibb.co/CWcWrQX/chat.jpg" id="chatimage" />
+
+                    <input type="radio" name="chat" id="chat1" checked />
+                    <input type="radio" name="chat" id="chat2" />
+                    <input type="radio" name="chat" id="chat3" />
+                    <input type="radio" name="chat" id="chat4" />
+                    <input type="radio" name="chat" id="chat5" />
+                    <input type="radio" name="chat" id="chat6" />
+                    <input type="radio" name="chat" id="chat7" />
+                    <input type="radio" name="chat" id="chat8" />
+
+                    <br />
+                    <div class="navigateBar">
+                        <label for="chat1" class="labelClass" style="background-color: black;"></label>
+                        <label for="chat2" class="labelClass"></label>
+                        <label for="chat3" class="labelClass"></label>
+                        <label for="chat4" class="labelClass"></label>
+                        <label for="chat5" class="labelClass"></label>
+                        <label for="chat6" class="labelClass"></label>
+                        <label for="chat7" class="labelClass"></label>
+                        <label for="chat8" class="labelClass"></label>
+                    </div>
+                    <br />
+                    <br />
+
+                    <div class="chatDesc">
+                        <ol style="list-style-type: none;" id="chatoverview">
+                            <li> <u>Overview</u> </li>
+                            <li>Language : Java </li>
+                            <li>Tools : Android studio</li>
+                            <li> Tested Android versions: lollipop, marshmallow, oreo, pie, 10 </li>
+                        </ol>
+                        <br />
+                        <u>Description</u> <br />
+                        &nbsp;&nbsp;&nbsp; This is a chatting application with free internet voice calling.
+                        <br />This is very user-friendly and very much easy to use. The UI in this application
+                        makes you feel elagant. XML is a markup language thaat is used for front end. For applicaation
+                        behaviour
+                        i used java. The very famous google firebase is used for backend databaase connection
+                        (It is a NoSQL database). For internet voice calling through this app I used sinch software
+                        development kit(SDK).
+                        This application is tested in some mobiles and is working fine as expected.
+                        <br />
+                        <br />
+                        <hr />
+                    </div>
+                </div>
+
+                <br />
+                <br />
+
+                <input type="checkbox" name="android2box" id="android2box" />
+                <label for="android2box"> &nbsp;&nbsp;&nbsp;&nbsp; Live followers counter <i class="fa fa-caret-up"
+                        id="liveicon"></i> </label>
+
+                <div class="android2slide">
+                    <br />
+                    <img src="imgs/lc1.jpg" id="liveimage" />
+
+                    <input type="radio" name="live" id="live1" checked />
+                    <input type="radio" name="live" id="live2" />
+                    <input type="radio" name="live" id="live3" />
+                    <input type="radio" name="live" id="live4" />
+                    <input type="radio" name="live" id="live5" />
+                    <input type="radio" name="live" id="live6" />
+                    <input type="radio" name="live" id="live7" />
+                    <input type="radio" name="live" id="live8" />
+
+                    <br />
+                    <div class="navigateBar">
+                        <label for="live1" class="labelClass" style="background-color: black;"></label>
+                        <label for="live2" class="labelClass"></label>
+                        <label for="live3" class="labelClass"></label>
+                        <label for="live4" class="labelClass"></label>
+                        <label for="live5" class="labelClass"></label>
+                    </div>
+                    <br />
+                    <br />
+
+                    <div class="liveDesc">
+                        <ol style="list-style-type: none;" id="chatoverview">
+                            <li> <u>Overview</u> </li>
+                            <li>Language : Java </li>
+                            <li>Tools : Android studio</li>
+                            <li> Android versions: 4.4 Kitkat and above </li>
+                        </ol>
+                        <br />
+                        <u>Description</u> <br />
+                        &nbsp;&nbsp;&nbsp; This application is used to count the live followers in instagram.
+                        since, instagram doesn't allow the private account users to check their exact followers count
+                        after reaching 10K followers. For that purpose, I created this application. Most of the live
+                        followers
+                        counter app showing the count only when we enter into that application. But,this app shows the
+                        followers count in the notification. This notification sustains, also after closing the
+                        application.
+                        Whenever clicking the 'Refresh' button in notification bar it scraps from the web it shows the
+                        real live count.
+                        This notification is non-clearable.
+                        <br />
+                        <br />
+                        <hr />
+                    </div>
+                </div>
+
+            </fieldset>
+
+        </fieldset>
+
+        <div class="subHeading3">
+            ABOUT
+        </div>
+
+        <fieldset class="about" data-aos="fade-right">
+            <a name="btabout"></a>
+            <img src="imgs/gowtham.jpg" id="myImage" />
+            <span style="margin-top:2%">I am Gowtham. I am from Coimbatore. i am studying 3rd year computer science
+                engineering at
+                sns college of engineering.
+                I am an intermediate programmer and a good web designer. My technical skills are
+                c, c++, java, html, css, javascript, android development, php, mysqli.
+            </span>
+        </fieldset>
+
+        <div class="subHeading4">
+            CONTACT
+        </div>
+
+        <div class="contact" data-aos="fade-right">
+            <a name="btcontact"></a>
+            <div class="social_container">
+                <div class="whatsapp">
+                    <a href="https://wa.me/+917010531836"> <i class="fa fa-whatsapp fa-2x"></i> </a>
+                </div>
+
+                <div class="facebook">
+                    <a href="https://m.facebook.com/gowtham.billa"> <i class="fa fa-facebook fa-2x"></i> </a>
+                </div>
+
+                <div class="instagram">
+                    <a href="https://www.instagram.com/idz_mee_gowtham"> <i class="fa fa-instagram fa-2x"></i> </a>
+                </div>
+
+                <div class="telegram">
+                    <a href="https://telegram.me/gowtham_sonsadmin"> <i class="fa fa-telegram fa-2x"></i> </a>
+                </div>
+
+                <div class="mail">
+                    <a href="mailto:gowthamcool4ever@gmail.com?body=Hai Gowtham,  "><i class="fa fa-envelope fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="credits">
+            <p style="color:white;text-align:center;margin-left:0;font-size: 10pt;">
+                Icon &copy; fontawesome
+            </p>
+        </div>
+
+        <img src="gif/sun.gif" border="0" id="sun" />
+        <img src="gif/moon.gif" border="0" id="moon" />
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        var test = document.getElementsByTagName('li');
+        for (let i = 0; i < test.length; i++) {
+            test[i].addEventListener('click', function () {
+                var ele = document.getElementById("chk");
+                if (ele.checked)
+                    ele.checked = false;
+            });
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

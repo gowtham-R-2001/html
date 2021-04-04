@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<meta charset="utf-8" />
+		<title>My website</title>
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="icon" type="image/ico" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSMc4aoavSWmGO4XLuBUiJnfr5vgS6kxqaiuQ&usqp=CAU" />
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<nav class="navigation-bar">
+				<input type="checkbox" id="chk" onclick="HideButton();"/>
+				<label for="chk" style="color:white;" id="navicon"><i class="fa fa-navicon"></i></label>
+				<label id="pb">Personal Blog</label>
+				<div class="nav-slide"></div>
+				<ul>
+					<li><a href="#btcontact">Contact</a></li>
+					<li><a href="#btabt">About</a></li>
+					<li><a href="#btprj">Mini-Projects</a></li>
+					<li><a href="#btintro">Welcome</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="head">
+			<div class="outer">
+				<div class="name_container">
+					<h2 id="hello">Hello,</h2>
+					<h2 id="iam">I am</h2>
+					<h2 style="color:#cc0000;" id="myname">Gowtham</h2>
+				</div>
+				<div class="butn_container">
+					<button id="view_more"><a href="#btintro">View more</a></button>
+					<div class="wipe"></div>
+				</div>
+			</div>
+		</div>
+
+			<a name="btintro"></a>
+		<div class="content">
+				<div class="intro" data-aos="zoom-in-up">
+					<legend>WELCOME</legend>
+					<p class="font-bold">Hey there,thanks for visiting. 
+					Here you gonna see the mini-projects that I had done from my first semester. 
+					</p>
+					<a name="btprj"></a>
+				</div>
+
+				<hr />
+
+				<div class="prjs">
+						<legend>MINI - PROJECTS</legend>
+						<div class="c" >
+							<p class="prg_title" align="center">C/C++ projects</p>
+							<p class="font-bold">Bank application<br />
+								Quiz game<br />
+								Ticket booking system</p>
+								<br /><br />
+								<a href="c.html" target="_blank" style="color:#cc0000;" class="view_pos">View</a>
+						</div>
+
+						<hr />
+						<div class="java" >
+							<p class="prg_title" align="center">Java</p>
+							<p class="font-bold">Shop database GUI<br />
+								Quiz game GUI<br />
+								Student database system</p>
+								<br /><br />
+								<a href="#" style="color:#cc0000;" class="view_pos">View</a>
+						</div>
+
+						<hr />
+						<div class="web" >
+							<p class="prg_title" align="center">HTML , CSS , JS</p>
+							<p class="font-bold">
+								Front end website
+							</p>
+							<br /><br />
+								<a href="#" style="color:#cc0000;"class="view_pos">View</a>
+								<a name="btabt"></a>
+						</div>
+				</div>
+
+				<hr />
+
+				<div class="about">
+					<legend>ABOUT</legend>
+					<p class="font-bold">
+						I am <span style="color:#cc0000">Gowtham</span> from coimbatore. I am studying 3rd year computer science engineering at 
+						<a href="https://snsce.ac.in" target="_blank"><span style="color:blue">sns college of engineering.</span></a> I had done some mini-projects in c , c++ , java , html , css , js as mentioned above. I am a intermediate programmer and a web designer.
+						The website you are seeing now is also developed by me.
+					</p>
+				</div>
+
+				<hr />
+
+				<a name="btcontact"></a>
+		</div>
+
+		<div class="contact">
+			<div class="logo-container">
+				<i class="fa fa-whatsapp fa-2x" style ="color:palegreen" title="+91-7010531836"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<i class="fa fa-facebook fa-2x" style ="color:blue" ></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://www.instagram.com/idz_mee_gowtham" target="_blank" ><i class="fa fa-instagram fa-2x" style ="color: orchid;  "></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://telegram.me/gowtham_sonsadmin" target="_blank" ><i class="fa fa-telegram fa-2x" style ="color:lightblue"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="https://mailto::gowthamcool4ever@gmail.com" target="_blank" ><i class="fa fa-envelope fa-2x" style ="color:lightcoral"></i><a>
+			</div>
+		</div>
+
+		<div class="credits">
+			<p style="font-size:5pt;font-family:montserrat-para;">
+				&copy; The icons that are used in this website are taken from fontawesome.com
+			</p>
+		</div>
+
+		<div class="move_to_top">
+			<a href="#"><i class="fa fa-arrow-up"></i></a>
+		</div>
+
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+			var test = document.getElementsByTagName('li') ;
+			for(let i = 0 ; i < test.length ; i++){
+				test[i].addEventListener('click',function(){
+					var ele = document.getElementById("chk") ;
+					if( ele.checked )
+						ele.checked = false ;
+				}) ;
+			}
+		</script>
+	</body>
+</html>

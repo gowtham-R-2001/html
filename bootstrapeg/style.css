@@ -1,0 +1,53 @@
+body {
+    position: relative;
+}
+
+.row {
+    height: 99vh;
+    margin: 0;
+    overflow-y: hidden;
+}
+
+.bg {
+    background: blueviolet;
+    color: wheat;
+}
+
+.container-fluid {
+    padding: 20px;
+    height: 100vh;
+}
+
+.col, .col-4, .col-8{
+    text-align: center;
+    padding: 20px;
+    border: 1px solid white;
+}
+
+ol {
+    list-style-type: none;
+}
+
+.btn {
+    border: 1px solid #000;
+    margin: 3%;
+} 
+
+p {
+    text-align: left;
+}
+
+.list-group-item {
+    border: 0;
+    border-radius: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0; 
+    border-top-right-radius: 0;
+}

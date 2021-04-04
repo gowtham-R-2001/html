@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <title>Form</title>
+    <script language="JavaScript">
+		
+    </script>
+    <style>
+      td {border:0;}
+      table {border-color:#cc0000;}
+      a:hover{color:#cc0000;}
+    </style>
+  </head>
+  <body onload="document.f.nam.focus();">
+      <h1 align="center">Form</h1>
+      <form name="f" method="post">
+        <table align="center" cellspacing="20" border="5">
+
+          <tr>
+          <td>Name</td>
+          <td> <input type="text" size="20" name="nam" tabindex="1"></td>
+          </tr>
+
+          <tr>
+            <td>Password</td>
+            <td><input type="password" name="pwd" size="20" tabindex="2"></td>
+          </tr>
+
+          <tr>
+            <td>Confirm Password </td>
+            <td><input type="password" name="conpwd" size="20" tabindex="3"></td>
+          </tr>
+
+          <tr>
+            <td>Phone number</td>
+            <td><input type="text" name="pno" size="20" tabindex="3"></td>
+          </tr>
+
+          <tr>
+            <td>Gender</td>
+            <td><input type="radio" name="gen" value="m" tabindex="4">Male &nbsp;&nbsp;
+            <input type="radio" name="gen" value="f" tabindex="5">Female&nbsp;&nbsp;
+            <input type="radio" name="gen" value="t" tabindex="6">Transgender </td>
+          </tr>
+
+          <tr>
+            <td>Nationality</td>
+            <td><select name="country" size="1" tabindex="7">
+            <option value="ind">india</option>
+            <option value="aus">Australia</option>
+            <option value="indo">Indonesia</option>
+            <option value="afg">Afghanisthan</option>
+            <option value="pak">Pakistan</option>
+            </select></td>
+          </tr>
+
+          <tr>
+            <td>Address</td>
+            <td><textarea rows="5" cols="30" tabindex="8"></textarea></td>
+          </tr>
+
+          <tr>
+            <td>School name </td>
+            <td><input type="text" size="20" name="school" tabindex="9"></td>
+          </tr>
+
+          <tr>
+            <td>College name </td>
+            <td><input type="text" size="20" name="college" tabindex="10"></td>
+          </tr>
+
+          <tr>
+            <td>SSLC marks</td>
+            <td><input type="text" size="20" name="10marks" tabindex="11"></td>
+          </tr>
+
+          <tr>
+            <td>HSC marks</td>
+            <td><input type="text" size="20" name="12marks" tabindex="12"></td>
+          </tr>
+
+          <tr>
+          <td colspan="2" align="center"><input type="checkbox" name="accept" tabindex="13" </td>I accept all the terms and conditions<br /><br /><a href="">terms and conditions</a>
+          <tr>
+
+          <tr>
+            <td colspan="2" align="right"><input type="submit" name="submit" value="submit" tabindex="14" onclick="fun();"></td>
+          </tr>
+
+        </table>
+	  </form>
+  </body>
+</html>

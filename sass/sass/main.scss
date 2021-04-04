@@ -1,0 +1,56 @@
+// In CSS --varname for declaring varibales but in scss it using $varname for declaring variables.
+// in css we want to declare varibales inside root or body but in scss we can decalre anywhere.
+// --primary-color: #00FF00;
+//     --secondary-color: #cc0000;
+
+
+/* mixin
+    to make the code not repeated we can use mixin with include keyword.
+    we can also pass argument to mixin.
+    code reusability
+*/
+
+$text-color: white;
+$a-background: green;
+$fav_background: yellow;
+
+@mixin flexCenter($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+body {
+    background: $fav_background;
+}
+
+a {
+    background-color: $a-background;
+    color: $text-color;
+}
+
+.main {
+
+    @include flexCenter(column);
+
+    #{&}paragraph {
+        color: green;
+
+        button {
+            background: $text-color;
+        }
+    }
+
+    #{&}paragraph2 {
+        color: blue;
+    }
+
+   //the meaning of {&} is name of the parent.
+
+    #{&}paragraph:hover {
+        color: red;
+
+        button {
+            background: $a-background;
+        }
+    }
+}

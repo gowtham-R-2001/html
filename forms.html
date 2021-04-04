@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Forms</title>
+<script language="JavaScript">
+function fname()
+{
+	var s = "Enter a name !" ;
+	var x = 0 ;
+	if(document.f.nam.value == "")
+		alert(s + x) ;
+	else
+		alert(document.f.nam.value) ;
+
+	sp.innerHTML="sivasakthi";
+
+	<!-- if(document.f.sex.value == "m") -->
+		<!-- sp.innerHTML="Male"; -->
+	<!-- else if(document.f.sex.value == "f") -->
+		<!-- sp.innerHTML="Female"; -->
+	<!-- else if(document.f.sex.value == "t") -->
+		<!-- sp.innerHTML="Transgender"; -->
+
+	if(document.f.sex[0].checked==true )
+		sp.innerHTML="male";
+}
+
+function fun()
+{
+	document.f.sex[0].checked = false ;
+}
+</script>
+</head>
+<body onload="document.f.nam.focus();">
+<h1>Biodata</h1>
+<form name="f" method="post">
+Name <input type="text" size="20" name="nam" tabindex="1" /><br /><br />
+Password <input type="password" size="20" name="pwd" tabindex="2" /><br /><br />
+Nationality <select size="1" name="country" tabindex="3">
+<option value="ind" selected="selected">India</option>
+<option value="aus">Australia</option>
+<option value="usa">United states</option>
+<option value="indo">Indonesia</option>
+<option value="lanka">Sri lanka</option>
+</select><br /><br />
+sex <input type="radio" name="sex" value="m" tabindex="4" />Male
+<input type="radio" name="sex" value="f" tabindex="5" />Female
+<input type="radio" name="sex" value="t" tabindex="6" />Transgender
+<br /><br />
+Hobbies
+<input type="checkbox" name="hb1" value="1" tabindex="7" />Swimming
+<input type="checkbox" name="hb2" value="1" tabindex="8" />Sleeping
+<input type="checkbox" name="hb3" value="1" tabindex="9" />Reading
+<input type="checkbox" name="hb4" value="1" tabindex="10" />Eating
+<input type="checkbox" name="hb5" value="1" tabindex="11" />Walking
+<br /><br />
+Address <textarea rows="5" cols="60" name="address"></textarea>
+<input type="button" name="submit" value="submit" onclick="fun();" />
+
+<span name="sp" id="sp"></span>
+</form>
+</body>
+</html>

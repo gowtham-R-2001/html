@@ -1,0 +1,402 @@
+@font-face {
+    font-family: montserrat-para; 
+    src: url('fonts/MontserratAlternates-Light.otf'); 
+} 
+
+@font-face{
+   font-family: montserrat;
+   src: url("fonts/Montserrat-Bold.otf") ;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: montserrat ;
+}
+
+p {
+   font-family: montserrat;
+}
+
+.head {
+   position: relative;
+   height: 100vh;
+   width: 100%;
+   background-size: cover;
+   background-position: center center;
+   background-image: url("https://images.hdqwalls.com/download/monochrome-nature-wide-1920x1080.jpg");
+   animation: animate 8s linear infinite alternate;
+}
+
+.outer {
+   position: absolute;
+   height: 100vh; 
+   width: 100%;
+   background-size: cover;
+   background-position: center center;
+   background-color: rgba(0,0,0,0.5) ;
+}
+
+@keyframes animate {
+   0%,100%{
+       background-image: url("https://images.hdqwalls.com/download/monochrome-nature-wide-1920x1080.jpg");
+   }
+   75%{
+       background-image: url("https://wallpapercave.com/wp/Fr0KPFO.jpg");
+   }
+}
+
+.name_container {
+   margin-top: 250px;
+   margin-left: 210px; 
+   line-height: 30px;
+   font-size: 20pt;
+   color: white;
+   z-index: 1;
+   text-align: left;
+   max-width: 250px;
+   overflow: hidden;
+}
+
+#hello,#myname,#iam{
+   margin-left: -210px;
+   transition-duration: 1s;
+}
+
+.butn_container {
+   position: relative;
+   top: 30px;
+   left: 250px; 
+   max-width: 112px; 
+   max-height: 30px;
+   transition-duration: 1s;
+   overflow: hidden;
+}
+
+#view_more {
+   position: relative;
+   background: transparent;
+   border: 2px solid #cc0000;
+   color: #c0c0c0;
+   margin-left: -210px;
+   font-size: 15pt;
+   transition-duration: 1s;
+   z-index: 1;
+}
+
+.wipe {
+   position: relative;
+   bottom: 33px;
+   height: 5px;
+   margin-left: -210px;
+   width: 110px;
+   transition-duration: 1s;
+   background: #cc0000;
+}
+
+#view_more:hover ~ .wipe {
+   height: 100px;
+}
+
+#view_more:focus ~ .wipe {
+   height: 100px;
+}
+
+.navigation-bar {
+   position: fixed;
+   height: 80px;
+   z-index: 1;
+   width: 100%;
+   background: #000000;
+}
+
+nav #pb {
+   position: relative;
+   left: 30px;
+   top: 26px;
+   color: white;
+   font-size: 17pt;
+   font-weight: bold;
+   letter-spacing: 1px;
+}
+
+button {
+   outline:none;
+}
+
+nav ul li {
+   float:right;
+   padding:10px;
+   margin-top:-18px;
+   margin-right:10px;
+   list-style-type:none;
+   color:white;
+   text-transform:uppercase;
+   font-weight:bold;
+   margin-left:10px;
+   letter-spacing:1px;
+   font-size:12pt;
+   cursor:pointer;
+}
+
+a {
+   text-decoration:none;
+   transition-duration:500ms;
+   color:white;
+}
+
+nav a:hover {
+   color:#cc0000;
+   padding:10px;
+   border-radius:70px;
+}
+
+.navigation-bar i {
+   position:absolute;
+   right:20px;
+   top:25px;
+   visibility:hidden;
+}
+
+.navigation-bar i:hover{
+   color:#cc0000;
+}
+
+#chk{
+   display:none;
+}
+
+@media(max-width:769px){
+   ul{
+       display:none;
+   }
+
+   body{
+      overflow-y: auto;
+   }
+
+   ul {
+       transform: rotate(180deg);
+   }
+   ul > li {
+       transform: rotate(-180deg);
+   }
+
+   #chk:checked ~ ul {
+       position: relative;
+       margin-top:60px;
+       margin-left:auto;
+       margin-right:auto;
+       margin-bottom:auto;
+       padding: 10px;
+       transition-duration:1s;
+       display:grid;
+   }
+
+   #chk:checked ~ ul li{
+       font-size:10pt;
+       text-align:center;
+       z-index:2;
+       color:white;
+       padding:30px;
+   }
+
+   .nav-slide{
+       position: fixed;
+       top: 70px;
+       height: 10px;
+       max-height: 100vh;
+       width: 100%;
+       transition-duration: 1s;
+       background-color: black;
+       overflow-y: scroll;
+   }
+
+   #chk:checked ~ .nav-slide{
+      height: 100vh;
+   }
+
+   .name_container {
+       font-size:15pt;
+       line-height:20px;
+       margin-left:70px;
+       margin-top:120px;
+   }
+
+   .butn_container {
+       position: relative;
+       left:200px;
+       top:10px;
+   }
+
+   nav #pb {
+       font-size:12pt;
+   }
+
+   .navigation-bar i {
+       visibility:visible;
+   }
+
+   .content legend{
+       font-size:8pt;
+   }
+
+   .content .font-bold{
+       font-size:11pt;
+   }
+
+   .content .view_pos{
+       font-size:10pt;
+   }
+   
+   .content .intro{
+       margin-bottom: 30%;
+   }
+   
+   .content .prjs{
+       margin-bottom: 30%;
+   }
+   
+   .content .contact{
+       margin-bottom: 30%;
+   }
+   
+   .content .about{
+       margin-bottom: 30%;
+   }
+}
+
+.content{
+   padding: 20px;
+   display: block;
+}
+
+.intro {
+   display:block;
+   padding:30px;
+   max-width:725px;
+   margin-top:5%;
+   margin-bottom:10%;
+   margin-left:auto;
+   align-items: center;
+   margin-right:auto;
+   border:3px solid #add8e6;
+   border-radius:10px;
+   text-align:justify;
+   box-shadow: 0px 0px 10px 0px #add8e6;
+}
+
+.prg_title{
+   font-size: 12pt;
+   color: blue ;
+   font-weight: bold;
+}
+
+.move_to_top i {
+   padding:10px;
+   position:fixed;
+   bottom:20px;
+   right:20px;
+   color:red;
+   border:2px solid #c0c0c0;
+   border-radius:5px;
+   display:none;
+}
+
+legend {
+   color:#cc0000;
+   position: absolute;
+   background:white;
+   margin-top: -45px;
+   padding: 5px;
+   border:1px solid #cc0000;
+   border-radius:5px;
+   font-family: montserrat-para;
+   font-size:12pt;
+}
+
+.font-bold {
+   font-size:13pt;
+   font-weight: bold;
+   line-height:2rem;
+}
+
+hr {
+   visibility: hidden;
+}
+
+.prjs {
+   padding:30px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 10%;
+   align-items: center;
+   border:3px solid #add8e6;
+   border-radius: 5px;
+   max-width:725px;
+   box-shadow: 0px 0px 10px 0px #add8e6;
+}
+
+.c {
+   border: 2px solid #add8e6 ;
+   margin: 5%;
+   padding: 3%;
+}
+
+.java {
+   border: 2px solid #add8e6 ;
+   margin: 5%;
+   padding: 3%;
+}
+
+.web {
+   border: 2px solid #add8e6 ;
+   margin: 5%;
+   padding: 3%;
+}
+
+.view_pos{
+   float:right;
+   margin-top:-13px;
+   font-size:12pt;
+   font-family: montserrat-para;
+}
+
+.about {
+   display:flex;
+   padding:30px;
+   max-width:725px;
+   margin-bottom:10%;
+   margin-left:auto;
+   margin-right:auto;
+   border:3px solid #add8e6;
+   border-radius:10px;
+   text-align: justify;
+   box-shadow: 0px 0px 10px 0px #add8e6;
+}
+
+.contact{
+   display: flex;
+   margin:0 auto;
+   padding:20px;
+   justify-content: center;
+   background-color: rgba(0,0,0,0.5);
+}
+
+.logo-container {
+   display: flex;   
+}
+
+.credits{
+   display: flex;
+   background: black;
+   justify-content: center;
+   color:white;
+   margin:0 auto;
+   padding:3px;
+   font-family: montserrat-para;
+   text-align: center;
+}
